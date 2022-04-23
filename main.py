@@ -11,7 +11,9 @@ class address:
         self.company_name = company_name
         self.position = position
         self.adres = adres
-        
+        for name in self.name:
+            print(self.name,self.surname,",","adres korespodencyjny:",adres)
+            break
     def __str__(self):
         return f'{self.name} {self.surname} {self.adres}'
 
@@ -19,5 +21,4 @@ Flower = address(name="Jan", surname="Kowalski", company_name="Kwiatuszki",posit
 Mug = address(name="Krzysztof", surname="Jerzyna", company_name="Jerzynka", position="Menager", adres="Jerzynki@io.pl")
 Desk= address(name="Sławomir",surname="Allworks", company_name="Desk For You", position="Dyrektor", adres="Deskforyou@o2.pl")
 Storczyk = address(name="Eugeniusz",surname="Kos", company_name="Storczyki",position="Menager",adres="storczyki@121.pl")
-all_firms = [Flower, Mug, Desk, Storczyk]
-print(all_firms)
+
