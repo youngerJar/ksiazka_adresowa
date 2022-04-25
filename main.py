@@ -18,7 +18,7 @@ class address:
         return f'{self.name} {self.surname} {self.adres}'
 
 Flower = address(name="Jan", surname="Kowalski", company_name="Kwiatuszki",position="Dyrektor",adres="Kwiatuszki@o2.pl")
-Mug = address(name="Krzysztof", surname="Jerzyna", company_name="Jerzynka", position="Menager", adres="Jerzynki@io.pl")
+Mug = address(name="Krzysztof", surname="Jezyna", company_name="Jezynka", position="Menager", adres="Jezynki@io.pl")
 Desk= address(name="Sławomir",surname="Allworks", company_name="Desk For You", position="Dyrektor", adres="Deskforyou@o2.pl")
 Storczyk = address(name="Eugeniusz",surname="Kos", company_name="Storczyki",position="Menager",adres="storczyki@121.pl")
 
