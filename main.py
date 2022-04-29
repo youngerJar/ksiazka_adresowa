@@ -24,6 +24,15 @@ class card:
     def label_length(self):
         return sum([len(self.first_name), len(self.last_name), 1])
 
+class BaseContact(card):
+    def __init__(self, tel_priv, *args, **kwargs):
+        super().__init__(*args, *kwargs)
+        self.tel_priv = tel_priv
+
+    @property
+    def label_length(self):
+        return sum([len(self.first_name), len(self.last_name)])
+
 
 
 
