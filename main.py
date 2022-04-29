@@ -14,7 +14,9 @@ class card:
 
     def __repr__(self):
         return f"card(first_name= {self.first_name} last_name= {self.last_name}, email={self.email}"
-
+    def contact(self):
+        
 for firm in range(5):
     print(fake.first_name(), fake.last_name(),fake.email())
+
 
