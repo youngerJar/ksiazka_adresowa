@@ -28,10 +28,10 @@ class BusinessContact(card):
         self.position = position
         self.company = company
 
-
-
     def workcontact(self):
         return f"Wybieram numer firmowy : {self.phone} i dzwonię do {self.first_name} {self.last_name}"
+
+    def
 
 person1 = BusinessContact(first_name=fake.first_name(), last_name=fake.last_name(),
               email=fake.email(), tel_priv=fake.phone_number(),phone=fake.phone_number())
