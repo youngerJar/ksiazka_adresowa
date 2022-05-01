@@ -31,6 +31,20 @@ class BusinessContact(card):
         return f"Wybieram numer firmowy : {self.tel_priv} i dzwonię do {self.first_name} {self.last_name}"
 
     def create_contacts(self):
+        x = input("Wybierz rodzaj wizytówki: Biznesowa czy Prywatna ")
+        y = int(input("Ilość wizytówek: "))
+
+
+        if x =="Biznesowa":
+            print(fake.company())
+            return people*y
+        if x =="Prywatna":
+            print("elo")
+
+
+people = (fake.first_name(),fake.last_name(),"Numer służbowy to: ",fake.phone_number(), "Adres e-mail", fake.email())
+
+print(BusinessContact.create_contacts(card))
 
 
 
