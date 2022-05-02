@@ -36,16 +36,18 @@ class BusinessContact(card):
 
 
         if x =="Prywatna":
-            print("Super więc już zabieram się za przygotowanie dla Ciebie tylu wizytówek: ", y, "szt")
-            return f"{fake.first_name()} {fake.last_name()}, Twój numer to: {fake.phone_number()}," \
-                   f" a Twój adres e-mail to: {fake.email()}"
+            for i in range(y):
+                print((fake.first_name()), (fake.last_name()),"Twój numer to:",(fake.phone_number()),","
+                                                                                                     "",
+                      "a Twój adres e-mail to: ", (fake.email()))
 
 
         if x =="Biznesowa":
-            print("Super więc już zabieram się za przygotowanie dla Ciebie tylu wizytówek: ", y, "szt")
-            print(fake.company())
-            return f"{fake.first_name()} {fake.last_name()}, Twój numer służbowy to: {fake.phone_number()}" \
-                   f" służbowy e-mail {fake.email()}. Twoje stanowisko: {fake.job()}"
+            for i in range(y):
+                print(fake.company())
+                print((fake.first_name()),(fake.last_name()),",", "Twój numer służbowy to:", (fake.phone_number()),
+                    ",", "adres e-mail to: ",(fake.email()),"Twoje stanowisko to: ",(fake.job()))
+
 
 
 print(BusinessContact.create_contacts(BusinessContact))
