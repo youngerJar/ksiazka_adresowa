@@ -49,23 +49,15 @@ class BusinessContact(card):
 
 
 print(BusinessContact.create_contacts(BusinessContact))
-
-
-
-
-
-
-
-"""
 person1 = BusinessContact(first_name=fake.first_name(), last_name=fake.last_name(),
               email=fake.email(), tel_priv=fake.phone_number(),phone=fake.phone_number())
+print("-"*20)
 print(fake.company())
 print(person1.contact())
 print(person1.workcontact())
 print(person1.label_length())
 
 
-"""
 
 
 
